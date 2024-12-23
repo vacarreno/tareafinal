@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- Alumno: Victor Carreño -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carro de Compras</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+        </li>
+        <li>
+          <a href="#principal"
+            ><i class="fa-solid fa-hand-holding-dollar"></i> Catálogo</a
+          >
+        </li>
+        <li>
+          <a href="#redesss"
+            ><i class="fa-solid fa-square-share-nodes"></i> RRSS</a
+          >
+        </li>
+        <li>
+          <a href="#contacto-pie"
+            ><i class="fa-solid fa-file-signature"></i> Contácto</a
+          >
+        </li>
+      </ul>
+      <div class="logo-nav">
+        <img
+          class="logo-car"
+          src="./assets/img/logo01.png"
+          alt="Logo del carro"
+        />
+      </div>
+    </nav>
+
+    <!-- SELECT -->
+
+    <div class="contenedor-select">
+      <div>
+        <img
+          class="logo-select"
+          src="./assets/img/logo01.png"
+          alt="Logo del carro"
+        />
+      </div>
+      <div class="op-selecc">
+        <label for="contenedor-select">Filtrar por:</label>
+        <select>
+          <option value="opcion1">Precio</option>
+          <option value="opcion2">Color</option>
+          <option value="opcion3">Potencia</option>
+          <option value="opcion3">Autonomía</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main id="principal">
+      <div class="producto">
+        <img
+          src="./assets/img/Electric-Car-Transparent-06.png"
+          alt="City Car"
+        />
+        <h3>Modelo: City Car</h3>
+        <h3>Valor: $20.000.000</h3>
+        <button class="boton">Ver Más</button>
+      </div>
+      <div class="producto">
+        <img
+          src="./assets/img/Electric-Car-Transparent-02.png"
+          alt="City Car"
+        />
+        <h3>Modelo: City Car</h3>
+        <h3>Valor: $20.000.000</h3>
+        <button class="boton">Ver Más</button>
+      </div>
+      <div class="producto">
+        <img
+          src="./assets/img/Electric-Car-Transparent-03.png"
+          alt="City Car"
+        />
+        <h3>Modelo: City Car</h3>
+        <h3>Valor: $20.000.000</h3>
+        <button class="boton">Ver Más</button>
+      </div>
+      <div class="producto">
+        <img
+          src="./assets/img/Electric-Car-Transparent-04.png"
+          alt="City Car"
+        />
+        <h3>Modelo: City Car</h3>
+        <h3>Valor: $20.000.000</h3>
+        <button class="boton">Ver Más</button>
+      </div>
+      <div class="producto">
+        <img
+          src="./assets/img/Electric-Car-Transparent-06.png"
+          alt="City Car"
+        />
+        <h3>Modelo: City Car</h3>
+        <h3>Valor: $20.000.000</h3>
+        <button class="boton">Ver Más</button>
+      </div>
+      <div class="producto">
+        <img
+          src="./assets/img/Electric-Car-Transparent-HQ.png"
+          alt="City Car"
+        />
+        <h3>Modelo: City Car</h3>
+        <h3>Valor: $20.000.000</h3>
+        <button class="boton">Ver Más</button>
+      </div>
+      <div class="producto">
+        <img
+          src="./assets/img/Electric-Car-Transparent-06.png"
+          alt="City Car"
+        />
+        <h3>Modelo: City Car</h3>
+        <h3>Valor: $20.000.000</h3>
+        <button class="boton">Ver Más</button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="anima-footer-corazon">
+          <div class="corazon">&#x2665;</div>
+        </div>
+        <div><img src="./assets/img/hecho.png" alt="Logo hecho a mano" /></div>
+        <div class="anima-footer-corazon">
+          <div class="corazon">&#x2665;</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="social-links" id="redesss">
+          <a href="#" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="contact-info" id="contacto-pie">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:ventas@ecar.cl">ventas@ecar.cl</a>
+          </p>
+          <p>
+            <strong>Teléfono:</strong>
+            <a href="tel:+56999998888">+569 9999 8888</a>
+          </p>
+        </div>
+        <p class="footer-creditos">
+          © 2024 ECAR. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
